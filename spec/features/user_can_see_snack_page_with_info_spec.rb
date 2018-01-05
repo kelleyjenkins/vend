@@ -11,7 +11,6 @@ feature "When a user visits the vending machine show" do
     MachineSnack.create(snack: snack, machine: machine)
     MachineSnack.create(snack: snack, machine: machine2)
 
-
     visit snack_path(snack)
 
     expect(page).to have_content(snack.name)

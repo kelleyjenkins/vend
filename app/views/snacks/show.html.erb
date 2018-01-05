@@ -2,7 +2,7 @@
 Price: $<%= @snack.price %><br/>
 
 Locations <% @snack.machines.each do |machine| %>
-*<%= machine.location %>
-<%= machine.average_price %>
-(<%= machine.snacks.count %> kinds of snacks, average price of $<%= machine.average_price %>)
+  <%= machine.location %>
+  <%= machine.average_price %>
+  <%= machine.snacks.count %>
 <% end %>
